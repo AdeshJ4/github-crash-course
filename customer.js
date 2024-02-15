@@ -1,3 +1,10 @@
-function getSingleCustomer (){
-    console.log({id: 101, fname: "Adesh"});
+function getSingleCustomer() {
+  return { id: 101, fname: "Adesh" };
+}
+
+function getAllCustomer() {
+  return [
+    { id: 101, fname: "Adesh" },
+    { id: 102, fname: "manoj" },
+  ];
 }
