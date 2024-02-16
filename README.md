@@ -12,39 +12,39 @@ git --version
 git version 2.32.0.windows.2
 
  
-git init
-git add index.js
-git add .
-git commit -a -m "commit-1"
-git rm --cached .\index.js
-git diff
-git log
-git log --oneline
-git show 562f7a5
-git blame index.js
-git reset --hard 2717dd9  (revert commit)  -> all commits after this commit will disappear
-git revert 562f7a5  -> This will do opposite of this commit(if you add something or remove something then it will do opposite) 
+1. git init
+2. git add index.js
+3. git add .
+4. git commit -a -m "commit-1"
+5. git rm --cached .\index.js
+6. git diff
+7. git log
+8. git log --oneline
+9. git show 562f7a5
+10. git blame index.js
+11. git reset --hard 2717dd9  (revert commit)  -> all commits after this commit will disappear
+12. git revert 562f7a5  -> This will do opposite of this commit(if you add something or remove something then it will do opposite) 
 and will create new commit.
-git revert -m 1 ac04681 -> This is merge commit
-git push -f   -> forcefully push 
-git branch  -> list all branches
-git branch b1 -> Create new branch called b1.
-git checkout b1 -> Switch to branch b1 
-git checkout -b "feature-1"  -> Shortcut (directly create and switch to branch)
-git checkout feature_Name
-git merge feature_Age
+13. git revert -m 1 ac04681 -> This is merge commit
+14. git push -f   -> forcefully push 
+15. git branch  -> list all branches
+16. git branch b1 -> Create new branch called b1.
+17. git checkout b1 -> Switch to branch b1 
+18. git checkout -b "feature-1"  -> Shortcut (directly create and switch to branch)
+19. git checkout feature_Name
+20. git merge feature_Age
 
 Delete:
-git branch -d branch_name   -> local branch
-git push origin --delete branch_name  -> server branch
+21. git branch -d branch_name   -> local branch
+22. git push origin --delete branch_name  -> server branch
 
 
 git stash:
 you are working on your task and you want latest code but you don't want to "git add" ot commit you current task how you can do this?
 for this situations we can use stash.
->git stash
->git pull
->git stash apply
+23. git stash
+24. git pull
+25. git stash apply
 
 
 
